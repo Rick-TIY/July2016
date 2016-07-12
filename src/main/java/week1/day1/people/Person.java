@@ -1,8 +1,8 @@
 package week1.day1.people;
 
 public abstract class Person {
-    private String name;
-    private int age;
+    private String name = "Bob";
+    private int age = 15 / 25 * 32;
     private String gender;
 
     public String getName() {
@@ -27,5 +27,13 @@ public abstract class Person {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public boolean isSame(int newAge) {
+        if(((this.age > newAge) || this.age < 100) && this.age == 50) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

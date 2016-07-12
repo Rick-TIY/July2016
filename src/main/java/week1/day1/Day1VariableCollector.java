@@ -9,6 +9,15 @@ public class Day1VariableCollector {
     private char c = 'a';
     private char[] ca = {'a','b','c'};
 
+    private int[] ia = {1,2,3,4};
+    private int[] ia2 = new int[2];
+
+
+    public void changeArray() {
+        ia2[1] = 5;
+        System.out.println("Space 2: "+ia2[1]);
+    }
+
 
     public String getS() {
         return s;
