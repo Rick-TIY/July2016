@@ -31,5 +31,11 @@ public class School {
         System.out.println(s.getAge());
         System.out.println(s.getGender());
         System.out.println(s.getGpa());
+
+//        Parent p = new Parent();
+//        System.out.println(p.getHasStudent());
+
+        Parent.getHasStudent();
+
     }
 }

@@ -5,7 +5,7 @@ public class IfThenElse {
     private int currentSpeed = 4;
 
     // if-then-else
-    private boolean isMoving() {
+    public boolean isMoving() {
         // the "if" clause: currentSpeed is greater than zero
         if (currentSpeed > 0) {
             // the "then" clause: currentSpeed is greater than zero: return true
