@@ -17,9 +17,14 @@ public class Day1TimesTable {
         System.out.println("--------------------------------------------------------");
 
         // create another for-loop to start building the rows
+        for(int x = 1; x<=tableSize; x++) {
             // print left most column first
-
+            System.out.format("%4d |",x);
             // create another loop to fill in the multiplied columns
-
+            for(int y = 1; y <= tableSize; y++) {
+                System.out.format("%4d",y*x);
+            }
+            System.out.println();
+        }
     }
 }

@@ -37,25 +37,40 @@ public class Day1OddArray {
         //loop through the ArrayList and pull out the int[]s
         //As you pull out each int[], check the count for odd
         // and the sum for odd
-        // TODO: add the logic
-        //if both are odd, print "ODD MATCH", else print "REJECTED"
-        // TODO: add the logic
+        for (int[] intHolder: arrayHolder) {
+            //if both are odd, print "ODD MATCH", else print "REJECTED"
+            if(isOddCount(intHolder) && isSummedOdd(intHolder)) {
+                System.out.println("ODD MATCH");
+            } else {
+                System.out.println("REJECTED");
+            }
+        }
     }
 
 
-    private boolean isOddCount(int[] numHolder) {
+    private boolean isOddCount(int[] intHolder) {
         // count the number of ints in the int[]
         // if odd, return true, else return false
         boolean isOdd = false;
-        // TODO: add the logic
+//        int arraySize = intHolder.length;
+//        if(!(arraySize % 2 == 0)) {
+        if(!(intHolder.length % 2 == 0)) {
+            isOdd = true;
+        }
         return isOdd;
     }
 
-    private boolean isSummedOdd(int[] numHolder) {
+    private boolean isSummedOdd(int[] intHolder) {
         // sum the ints in the int[]
         // if they equal an odd number, return true, else return false
         boolean isOdd = false;
-        // TODO: add the logic
+        int sum = 0;
+        for(int i : intHolder) {
+            sum += i;
+        }
+        if(!(sum % 2 == 0)) {
+            isOdd = true;
+        }
         return isOdd;
     }
 }

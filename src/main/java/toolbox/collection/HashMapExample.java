@@ -1,24 +1,27 @@
 package toolbox.collection;
 
 import java.util.HashMap;
+import java.util.Set;
 
 public class HashMapExample {
 
     // Create a new HashMap named names that holds String,String
+    HashMap<String,String> names = new HashMap<>();
 
     // add another key,value to the HashMap
     public void addElement(String key,String value) {
-        //TODO: logic here
+        names.put(key,value);
     }
 
     // get a value from the HashMap at a specific key
     public String getValue(String key) {
-        //TODO: logic here
-        return ""; // DELETE ME
+        return names.get(key);
     }
 
     // print out all the Strings in the HashMap
     public void printAllElements() {
-        //TODO: logic here
+        for (String name : names.values()) {
+            System.out.println(name);
+        }
     }
 }

@@ -29,6 +29,13 @@ public class Day2FixEnhancedForLoop {
 
     private static void EnhancedPrintTwoDArray() {
         System.out.println("Printing out 2D Array with ENHANCED for-loop:");
+        for(int[] secondDArray : twoDArray) {
+            String secondDPrint = "";
+            for(int i : secondDArray) {
+                secondDPrint += i+" ";
+            }
+            System.out.println(secondDPrint);
+        }
     }
 
     private static void printThreeDArray() {
@@ -48,5 +55,14 @@ public class Day2FixEnhancedForLoop {
 
     private static void EnhancedPrintThreeDArray() {
         System.out.println("Printing out 3D Array with ENHANCED for-loop:");
+        for(int[][] secondDArray : threeDArray) {
+            for(int[] thirdDArray : secondDArray) {
+                String thirdDPrint = "";
+                for(int k : thirdDArray) {
+                    thirdDPrint += k+" ";
+                }
+                System.out.println(thirdDPrint);
+            }
+        }
     }
 }

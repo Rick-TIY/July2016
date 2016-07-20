@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class RandomGenerator {
 
+    // Global instantiation of Random
     private static Random random = new Random(System.currentTimeMillis());
 
     // Just a random number
