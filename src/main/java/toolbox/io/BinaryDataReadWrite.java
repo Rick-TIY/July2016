@@ -1,9 +1,8 @@
 package toolbox.io;
 
+
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
 
 public class BinaryDataReadWrite {
     public static void main(String[] args) {

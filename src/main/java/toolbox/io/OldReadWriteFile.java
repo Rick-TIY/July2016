@@ -11,9 +11,13 @@ public class OldReadWriteFile {
 
         // write content to file using IO libraries
         FileWriter fileWriter = new FileWriter(myFile);
-        fileWriter.write("Alice\n"); // overwrites file
-        fileWriter.append("Bob\n");
-        fileWriter.append("Charlie\n");
+        fileWriter.write("Alice1"); // overwrites file
+//        fileWriter.write("Alice2\n"); // overwrites file
+//        fileWriter.write("Alice3\n"); // overwrites file
+        fileWriter.append("Bob1");
+//        fileWriter.append("Bob2\n");
+//        fileWriter.append("Bob3\n");
+        fileWriter.append("Charlie");
         fileWriter.close();
 
         // read line-by-line
