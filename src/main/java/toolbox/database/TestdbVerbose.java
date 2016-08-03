@@ -43,8 +43,7 @@ public class TestdbVerbose {
             //
             // by declaring the id column IDENTITY, the db will automatically
             // generate unique values for new rows- useful for row keys
-            db.update(
-                    "CREATE TABLE sample_table ( id INTEGER IDENTITY, str_col VARCHAR(256), num_col INTEGER)");
+            db.update("CREATE TABLE sample_table ( id INTEGER IDENTITY, str_col VARCHAR(256), num_col INTEGER)");
         } catch (SQLException ex2) {
 
             //ignore

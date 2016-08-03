@@ -31,11 +31,11 @@ public class PreparedStatementDbUpdateExample {
             //STEP 4: Clean-up environment
             stmt.close();
             conn.close();
+        } catch (ClassNotFoundException cnfe) {
+            cnfe.printStackTrace();
         } catch(SQLException se) {
             se.printStackTrace();
-        } catch(Exception e) {
-            e.printStackTrace();
-        } finally {
+        }  finally {
             try {
                 if(stmt!=null)
                     stmt.close();

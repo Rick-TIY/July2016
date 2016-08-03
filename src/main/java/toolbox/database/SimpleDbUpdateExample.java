@@ -29,22 +29,22 @@ public class SimpleDbUpdateExample {
             //STEP 4: Clean-up environment
             stmt.close();
             conn.close();
+        } catch (ClassNotFoundException cnfe) {
+        cnfe.printStackTrace();
+    } catch(SQLException se) {
+        se.printStackTrace();
+    }  finally {
+        try {
+            if(stmt!=null)
+                stmt.close();
+        } catch(SQLException se2) {
+        } try {
+            if(conn!=null)
+                conn.close();
         } catch(SQLException se) {
             se.printStackTrace();
-        } catch(Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if(stmt!=null)
-                    stmt.close();
-            } catch(SQLException se2) {
-            } try {
-                if(conn!=null)
-                    conn.close();
-            } catch(SQLException se) {
-                se.printStackTrace();
-            }
         }
+    }
         System.out.println("Goodbye!");
     }
 }

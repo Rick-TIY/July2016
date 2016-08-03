@@ -40,11 +40,11 @@ public class PreparedStatementDbQueryExample {
             rs.close();
             stmt.close();
             conn.close();
+        } catch (ClassNotFoundException cnfe) {
+            cnfe.printStackTrace();
         } catch(SQLException se) {
             se.printStackTrace();
-        } catch(Exception e) {
-            e.printStackTrace();
-        } finally {
+        }  finally {
             try {
                 if(stmt!=null)
                     stmt.close();
